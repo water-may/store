@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/products #this
-    username: postgres #this
-    password: admin@123 #this
+    url: jdbc:postgresql://127.0.0.1:5432/products
+    username: postgres
+    password: admin@123
   jpa:
     database-platform: org.hibernate.dialect.PosgreSQLInnoDBDialect
     generate-ddl: true
@@ -24,7 +24,7 @@ spring:
     async:
       request-timeout: 3600000
 server:
-  port: 8080 #this if necessary
+  port: 8080
   error:
     path: /user/error
     whitelabel:

@@ -19,7 +19,7 @@ import java.util.Optional;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-import static io.getarrays.contactapi.constant.Constant.PHOTO_DIRECTORY;
+
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
 
@@ -42,8 +42,9 @@ public class ProductService {
         return productRepo.save(product);
     }
 
-    public void deleteContact(Product product) {
-        // TODO
+    public String deleteProduct(String  id) {
+        productRepo.deleteById(id);
+        return "Product deleted successfully";
     }
 
 }
